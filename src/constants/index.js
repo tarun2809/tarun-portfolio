@@ -10,8 +10,6 @@ import {
   hate,
   carla,
   luggage,
-  ibm,
-  vit,
 } from "../assets";
 
 export const navLinks = [
@@ -45,7 +43,7 @@ const experiences = [
   {
     title: "Project Intern",
     company_name: "IBM SkillsBuild",
-    icon: ibm,
+    icon: backend,
     iconBg: "#000000",
     date: "July 2024 - August 2024",
     points: [
