@@ -186,5 +186,32 @@ const projects = [
     source_code_link: "https://github.com/tarun2809",
   },
 ];
+const testimonials = [
+  {
+    testimonial:
+      "Tarun has exceptional skills in AI and full-stack development. His dedication to solving real-world problems is truly inspiring.",
+    name: "Dr. A. Venkatesh",
+    designation: "Professor",
+    company: "VIT-AP University",
+    image: "https://randomuser.me/api/portraits/men/32.jpg",
+  },
+  {
+    testimonial:
+      "Working with Tarun on our AI News Anchor project was a pleasure. He’s smart, fast, and always delivers quality work.",
+    name: "Project Guide",
+    designation: "Research Mentor",
+    company: "AutoNews Research Lab",
+    image: "https://randomuser.me/api/portraits/men/45.jpg",
+  },
+  {
+    testimonial:
+      "Tarun has been a consistent top performer at CodSoft. His ML solutions significantly improved our internal tools.",
+    name: "HR Team",
+    designation: "Internship Coordinator",
+    company: "CodSoft",
+    image: "https://randomuser.me/api/portraits/women/10.jpg",
+  },
+];
 
-export { services, technologies, experiences, projects };
+
+export { services, technologies, experiences, projects, testimonials };
