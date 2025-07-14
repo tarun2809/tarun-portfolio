@@ -3,39 +3,90 @@ import {
   backend,
   creator,
   web,
-  carrent,
-  jobit,
-  tripguide,
-  fakejob,
-  hate,
-  luggage,
+  project2,
+  project3,
+  gearXpert,
 } from "../assets";
 
 export const navLinks = [
-  { id: "about", title: "About" },
-  { id: "work", title: "Experience" },
-  { id: "projects", title: "Projects" },
-  { id: "contact", title: "Contact" },
+  {
+    id: "about",
+    title: "About",
+  },
+  {
+    id: "work",
+    title: "Experience",
+  },
+  {
+    id: "projects",
+    title: "Projects",
+  },
+  {
+    id: "contact",
+    title: "Contact",
+  },
 ];
 
 const services = [
-  { title: "AI/ML Engineer", icon: backend },
-  { title: "Full Stack Developer", icon: web },
-  { title: "Data Analyst", icon: creator },
-  { title: "Cloud Practitioner", icon: mobile },
+  {
+    title: "AI/ML Engineer",
+    icon: backend,
+  },
+  {
+    title: "Full Stack Developer",
+    icon: web,
+  },
+  {
+    title: "Data Analyst",
+    icon: creator,
+  },
+  {
+    title: "Cloud Practitioner",
+    icon: mobile,
+  },
 ];
 
 const technologies = [
-  { name: "Python", icon: "🐍" },
-  { name: "Java", icon: "☕" },
-  { name: "HTML", icon: "🌐" },
-  { name: "CSS", icon: "🎨" },
-  { name: "TensorFlow", icon: "🔶" },
-  { name: "PyTorch", icon: "🔥" },
-  { name: "Scikit-learn", icon: "📊" },
-  { name: "SQL", icon: "🗄️" },
-  { name: "Azure", icon: "☁️" },
-  { name: "AWS", icon: "☁️" },
+  {
+    name: "Python",
+    icon: "🐍",
+  },
+  {
+    name: "Java",
+    icon: "☕",
+  },
+  {
+    name: "HTML",
+    icon: "🌐",
+  },
+  {
+    name: "CSS",
+    icon: "🎨",
+  },
+  {
+    name: "TensorFlow",
+    icon: "🔶",
+  },
+  {
+    name: "PyTorch",
+    icon: "🔥",
+  },
+  {
+    name: "Scikit-learn",
+    icon: "📊",
+  },
+  {
+    name: "SQL",
+    icon: "🗄️",
+  },
+  {
+    name: "Azure",
+    icon: "☁️",
+  },
+  {
+    name: "AWS",
+    icon: "☁️",
+  },
 ];
 
 const experiences = [
@@ -55,52 +106,84 @@ const experiences = [
 
 const projects = [
   {
-    name: "Simulation-Driven Autonomous Vehicle Navigation",
+    name: "Autonomous Vehicle Navigation (CARLA)",
     description:
-      "Used CNN-LSTM model to control self-driving car in simulated environment (CARLA), achieving 94.5% accuracy in lane-keeping.",
+      "Built a CNN-LSTM model for autonomous lane navigation in CARLA simulator with 94.5% accuracy.",
     tags: [
-      { name: "TensorFlow", color: "blue-text-gradient" },
-      { name: "PyTorch", color: "green-text-gradient" },
-      { name: "CNN-LSTM", color: "pink-text-gradient" },
+      {
+        name: "TensorFlow",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CNN-LSTM",
+        color: "green-text-gradient",
+      },
     ],
-    image: project3,
-    source_code_link: "https://github.com/tarun2809", // replace with actual link if hosted
+    image: project2,
+    source_code_link: "https://github.com/tarun2809",
   },
   {
     name: "Hate Speech Detection System",
     description:
-      "Classified hate and violent speech using NLP and ML (LSTM, SVM, XGBoost) with 92% recall. Reduced false positives by 20%.",
+      "Text classification using NLP and ML (SVM, XGBoost, LSTM) with 92% recall rate to reduce hate/violent content.",
     tags: [
-      { name: "Python", color: "blue-text-gradient" },
-      { name: "NLP", color: "green-text-gradient" },
-      { name: "LSTM", color: "pink-text-gradient" },
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "LSTM",
+        color: "green-text-gradient",
+      },
+      {
+        name: "NLP",
+        color: "pink-text-gradient",
+      },
     ],
-    image: hate,
-    source_code_link: "https://github.com/tarun2809", // replace with actual link
+    image: project3,
+    source_code_link: "https://github.com/tarun2809",
   },
   {
     name: "Fake Job Post Detection",
     description:
-      "Used NLP with TF-IDF and Gradio interface to build ML model with 97.6% accuracy. Used SMOTE for balancing dataset.",
+      "Built ML model with Gradio UI to detect fake job posts with 97.6% accuracy using TF-IDF, SMOTE, and logistic regression.",
     tags: [
-      { name: "Python", color: "blue-text-gradient" },
-      { name: "Gradio", color: "green-text-gradient" },
-      { name: "Logistic Regression", color: "pink-text-gradient" },
+      {
+        name: "Gradio",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TF-IDF",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Logistic Regression",
+        color: "pink-text-gradient",
+      },
     ],
-    image: fakejob,
-    source_code_link: "https://github.com/tarun2809", // replace with actual link
+    image: gearXpert,
+    source_code_link: "https://github.com/tarun2809",
   },
   {
-    name: "RF-Powered Luggage Geo-Tagging",
+    name: "RF Luggage Tracking System",
     description:
-      "Used Arduino Uno and RF modules to design a real-time tracking + safety alert system with gas & water sensors.",
+      "IoT-based real-time luggage tracker with gas, fire, water sensors and alerts using Arduino, ESP-01 and RF modules.",
     tags: [
-      { name: "Arduino", color: "blue-text-gradient" },
-      { name: "IoT", color: "green-text-gradient" },
-      { name: "ESP-01", color: "pink-text-gradient" },
+      {
+        name: "IoT",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Arduino",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ESP-01",
+        color: "pink-text-gradient",
+      },
     ],
-    image: luggage,
-    source_code_link: "https://github.com/tarun2809", // replace with actual link
+    image: project2,
+    source_code_link: "https://github.com/tarun2809",
   },
 ];
 
