@@ -8,7 +8,6 @@ import {
   tripguide,
   fakejob,
   hate,
-  carla,
   luggage,
 } from "../assets";
 
@@ -64,7 +63,7 @@ const projects = [
       { name: "PyTorch", color: "green-text-gradient" },
       { name: "CNN-LSTM", color: "pink-text-gradient" },
     ],
-    image: carla,
+    image: project3,
     source_code_link: "https://github.com/tarun2809", // replace with actual link if hosted
   },
   {
