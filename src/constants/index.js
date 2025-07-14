@@ -1,273 +1,110 @@
-
 import {
-  logo,
+  mobile,
   backend,
   creator,
-  mobile,
   web,
-  github,
-  menu,
-  close,
-  css,
-  gearXpert,
-  project2,
-  project3,
-  mysql,
-  express,
-  aws,
-  mui,
-  
-  gsap,
-  framer,
-  figma,
-  git,
-  html,
-  javascript,
-  mongodb,
-  nodejs,
-  reactjs,
-  redux,
-  tailwind,
-  threejs,
-  firstTestimonial,
-  secondTestimonial,
-  thirdTestimonial,
-} from '../assets'
-
-
-// Import Tekisky separately
-import tekisky from "../assets/company/tekisky.png";
-
+  carrent,
+  jobit,
+  tripguide,
+  fakejob,
+  hate,
+  carla,
+  luggage,
+  ibm,
+  vit,
+} from "../assets";
 
 export const navLinks = [
-
-
-  {
-    id: "about",
-    title: "About",
-    
-  },
-  {
-    id: "work",
-    title: "Work",
-  },
-  {
-    id: "contact",
-    title: "Contact",
-  },
+  { id: "about", title: "About" },
+  { id: "work", title: "Experience" },
+  { id: "projects", title: "Projects" },
+  { id: "contact", title: "Contact" },
 ];
 
 const services = [
-  {
-    title: "Full-Stack Developer",
-    icon: web,
-  },
-  {
-    title: "Frontend Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Ui UX Designer",
-    icon: creator,
-  },
+  { title: "AI/ML Engineer", icon: backend },
+  { title: "Full Stack Developer", icon: web },
+  { title: "Data Analyst", icon: creator },
+  { title: "Cloud Practitioner", icon: mobile },
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "gsap",
-    icon: gsap,
-  },
-  {
-    name: "framer",
-    icon: framer,
-  },
-
- 
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Material Ui",
-    icon: mui,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "Express Js",
-    icon: express,
-  },
-  {
-    name: "AWS",
-    icon: aws,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "MySql",
-    icon: mysql,
-  },
-
-  {
-    name: "git",
-    icon: git,
-  },
- 
-
+  { name: "Python", icon: "🐍" },
+  { name: "Java", icon: "☕" },
+  { name: "HTML", icon: "🌐" },
+  { name: "CSS", icon: "🎨" },
+  { name: "TensorFlow", icon: "🔶" },
+  { name: "PyTorch", icon: "🔥" },
+  { name: "Scikit-learn", icon: "📊" },
+  { name: "SQL", icon: "🗄️" },
+  { name: "Azure", icon: "☁️" },
+  { name: "AWS", icon: "☁️" },
 ];
 
 const experiences = [
   {
-    title: "Full-Stack Developer",
-    company_name: "Tekisky",
-    icon: tekisky,
-    iconBg: "#383E56",
-    date: "Jan 2023 - present",
+    title: "Project Intern",
+    company_name: "IBM SkillsBuild",
+    icon: ibm,
+    iconBg: "#000000",
+    date: "July 2024 - August 2024",
     points: [
-      "Developing and maintaining web applications using MERN technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built and deployed an AI-powered chatbot using IBM Watson Assistant.",
+      "Applied sentiment analysis and text mining to enhance user understanding.",
+      "Improved support response time by 40% using real-time NLP workflows.",
     ],
-  },
-];
-
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Huzaif proved me wrong.",
-    name: "MD Mustaqeem",
-    designation: "Ecommerce",
-    company: "QuickMart",
-    image: firstTestimonial,
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Huzaif does.",
-    name: "Abdul Raheman",
-    designation: "Ecommerce Business",
-    company: "justbuyz",
-    image: secondTestimonial,
-  },
-  {
-    testimonial:
-      "After Huzaif optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "James Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: thirdTestimonial,
   },
 ];
 
 const projects = [
   {
-    name: "Tekisky Mart",
+    name: "Simulation-Driven Autonomous Vehicle Navigation",
     description:
-      "Tekisky Mart is a web-based platform that allows users to search, explore, and purchase a wide range of products from various providers, offering a seamless and efficient shopping experience.",
+      "Used CNN-LSTM model to control self-driving car in simulated environment (CARLA), achieving 94.5% accuracy in lane-keeping.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "white-text-gradient",
-      },
-      {
-        name: "node",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
- 
+      { name: "TensorFlow", color: "blue-text-gradient" },
+      { name: "PyTorch", color: "green-text-gradient" },
+      { name: "CNN-LSTM", color: "pink-text-gradient" },
     ],
-    image: project2,
-    source_code_link: "https://github.com/",
+    image: carla,
+    source_code_link: "https://github.com/tarun2809", // replace with actual link if hosted
   },
   {
-    name: "GearXpert",
+    name: "Hate Speech Detection System",
     description:
-      "GearXpert is your ultimate destination for premium auto parts and accessories, Whether you're an automobile enthusiast or a professional, find everything you need to upgrade, repair.",
+      "Classified hate and violent speech using NLP and ML (LSTM, SVM, XGBoost) with 92% recall. Reduced false positives by 20%.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "emailJs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Gsap",
-        color: "pink-text-gradient",
-      },
+      { name: "Python", color: "blue-text-gradient" },
+      { name: "NLP", color: "green-text-gradient" },
+      { name: "LSTM", color: "pink-text-gradient" },
     ],
-    image: gearXpert,
-    source_code_link: "https://github.com/",
+    image: hate,
+    source_code_link: "https://github.com/tarun2809", // replace with actual link
   },
   {
-    name: "GoGroove-Ecommerce",
+    name: "Fake Job Post Detection",
     description:
-      "Go-Groove is your ultimate destination for premium products across various categories. Whether you're a savvy shopper or a professional, enhance, and simplify your lifestyle—all in one place!",
+      "Used NLP with TF-IDF and Gradio interface to build ML model with 97.6% accuracy. Used SMOTE for balancing dataset.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "express",
-        color: "white-text-gradient",
-      },
-      {
-        name: "node",
-        color: "green-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
+      { name: "Python", color: "blue-text-gradient" },
+      { name: "Gradio", color: "green-text-gradient" },
+      { name: "Logistic Regression", color: "pink-text-gradient" },
     ],
-    image: project3,
-    source_code_link: "https://github.com/",
+    image: fakejob,
+    source_code_link: "https://github.com/tarun2809", // replace with actual link
+  },
+  {
+    name: "RF-Powered Luggage Geo-Tagging",
+    description:
+      "Used Arduino Uno and RF modules to design a real-time tracking + safety alert system with gas & water sensors.",
+    tags: [
+      { name: "Arduino", color: "blue-text-gradient" },
+      { name: "IoT", color: "green-text-gradient" },
+      { name: "ESP-01", color: "pink-text-gradient" },
+    ],
+    image: luggage,
+    source_code_link: "https://github.com/tarun2809", // replace with actual link
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };
